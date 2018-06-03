@@ -10,7 +10,6 @@ package com.myshop.webservices.getproductsservices;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
@@ -25,7 +24,6 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="Pid" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -35,37 +33,9 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "pid"
-})
-@XmlRootElement(name = "GetProductsRequest")
-public class GetProductsRequest {
+@XmlType(name = "")
+@XmlRootElement(name = "GetAllProductsRequest")
+public class GetAllProductsRequest {
 
-    @XmlElement(name = "Pid", required = true)
-    protected String pid;
-
-    /**
-     * Gets the value of the pid property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPid() {
-        return pid;
-    }
-
-    /**
-     * Sets the value of the pid property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPid(String value) {
-        this.pid = value;
-    }
 
 }

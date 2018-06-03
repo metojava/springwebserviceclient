@@ -11,7 +11,7 @@ http://www.springframework.org/schema/oxm/spring-oxm-3.0.xsd">
 
 	<bean name="webserviceTemplate" class="org.springframework.ws.client.core.WebServiceTemplate">
 	<constructor-arg ref="messageFactory"/>
-		<property name="defaultUri" value="http://localhost:8083/ws/endpoints" />
+		<property name="defaultUri" value="http://localhost:8080/ws/endpoints" />
 		<property name="marshaller" ref="marshaller" />
 		<property name="unmarshaller" ref="unmarshaller" />
 	</bean>
@@ -20,6 +20,8 @@ http://www.springframework.org/schema/oxm/spring-oxm-3.0.xsd">
 		<oxm:class-to-be-bound name="com.shop.my.Products"/>
 		<oxm:class-to-be-bound name="com.myshop.webservices.getproductsservices.GetProductsRequest"/>
 		<oxm:class-to-be-bound name="com.myshop.webservices.getproductsservices.GetProductsResponse"/>
+		<oxm:class-to-be-bound name="com.myshop.webservices.getproductsservices.GetAllProductsRequest"/>
+		<oxm:class-to-be-bound name="com.myshop.webservices.getproductsservices.GetAllProductsResponse"/>
 		
 		</oxm:jaxb2-marshaller>
 
@@ -27,6 +29,8 @@ http://www.springframework.org/schema/oxm/spring-oxm-3.0.xsd">
 			<oxm:class-to-be-bound name="com.shop.my.Products"/>
 		<oxm:class-to-be-bound name="com.myshop.webservices.getproductsservices.GetProductsRequest"/>
 		<oxm:class-to-be-bound name="com.myshop.webservices.getproductsservices.GetProductsResponse"/>
+		<oxm:class-to-be-bound name="com.myshop.webservices.getproductsservices.GetAllProductsRequest"/>
+		<oxm:class-to-be-bound name="com.myshop.webservices.getproductsservices.GetAllProductsResponse"/>
 		
 		</oxm:jaxb2-marshaller>
 		
